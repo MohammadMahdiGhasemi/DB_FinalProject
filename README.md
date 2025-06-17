@@ -64,7 +64,7 @@ python bale_main.py
 
 ## Database Configuration | پیکربندی پایگاه داده
 
-The project uses PostgreSQL as its database. You need to set up the following environment variables:
+The project uses PostgreSQL as its database. You need to set up the following environment variables:'/n'
 این پروژه از PostgreSQL به عنوان پایگاه داده استفاده می‌کند. شما باید متغیرهای محیطی زیر را تنظیم کنید:
 
 ```bash
