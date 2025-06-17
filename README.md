@@ -1,5 +1,4 @@
 # Database Project with Telegram and Bale Bots
-# پروژه پایگاه داده با ربات‌های تلگرام و بله
 
 This project implements a database system with bot interfaces for both Telegram and Bale messaging platforms.
 این پروژه یک سیستم پایگاه داده با رابط‌های ربات برای پلتفرم‌های پیام‌رسانی تلگرام و بله پیاده‌سازی می‌کند.
@@ -15,6 +14,7 @@ This project implements a database system with bot interfaces for both Telegram 
 ## Requirements | نیازمندی‌ها
 
 The project requires Python 3.x and the following main dependencies:
+
 پروژه به Python 3.x و وابستگی‌های اصلی زیر نیاز دارد:
 
 - Balethon - For Bale bot implementation | برای پیاده‌سازی ربات بله
@@ -86,88 +86,3 @@ BALE_BOT_TOKEN=your_bale_bot_token
 ```
 
 ---
-
-# پروژه پایگاه داده با ربات‌های تلگرام و بله
-
-این پروژه یک سیستم پایگاه داده با رابط‌های ربات برای پلتفرم‌های پیام‌رسانی تلگرام و بله پیاده‌سازی می‌کند.
-
-## ساختار پروژه
-
-- `main.py` - پیاده‌سازی ربات تلگرام
-- `bale_main.py` - پیاده‌سازی ربات بله
-- `create_tables.sql` - اسکریپت‌های SQL برای ایجاد جداول پایگاه داده
-- `queries.sql` - کوئری‌های SQL برای عملیات پایگاه داده
-- `requirment.txt` - وابستگی‌های پروژه
-
-## نیازمندی‌ها
-
-The project requires Python 3.x and the following main dependencies:
-پروژه به Python 3.x و وابستگی‌های اصلی زیر نیاز دارد:
-
-- Balethon
-- python-telegram-bot
-- psycopg2-binary
-- aiohttp
-- requests
-
-## راه‌اندازی
-
-1. ایجاد محیط مجازی:
-```bash
-python -m venv .venv
-```
-
-2. فعال‌سازی محیط مجازی:
-- Windows:
-```bash
-.venv\Scripts\activate
-```
-- Linux/Mac:
-```bash
-source .venv/bin/activate
-```
-
-3. نصب وابستگی‌ها:
-```bash
-pip install -r requirment.txt
-```
-
-4. راه‌اندازی پایگاه داده با استفاده از اسکریپت‌های SQL:
-```bash
-psql -U your_username -d your_database -f create_tables.sql
-```
-
-5. تنظیم توکن‌های ربات در فایل‌های مربوطه
-
-6. Run the bots:
-- For Telegram bot:
-```bash
-python main.py
-```
-- For Bale bot:
-```bash
-python bale_main.py
-```
-
-## Database Configuration
-
-The project uses PostgreSQL as its database. You need to set up the following environment variables:
-این پروژه از PostgreSQL به عنوان پایگاه داده استفاده می‌کند. شما باید متغیرهای محیطی زیر را تنظیم کنید:
-
-```bash
-DB_HOST=your_database_host
-DB_PORT=your_database_port
-DB_NAME=your_database_name
-DB_USER=your_database_username
-DB_PASSWORD=your_database_password
-```
-
-## Environment Variables
-
-For the bots to work properly, you need to set up the following environment variables:
-برای عملکرد صحیح ربات‌ها، شما باید متغیرهای محیطی زیر را تنظیم کنید:
-
-```bash
-TELEGRAM_BOT_TOKEN=your_telegram_bot_token
-BALE_BOT_TOKEN=your_bale_bot_token
-``` 
